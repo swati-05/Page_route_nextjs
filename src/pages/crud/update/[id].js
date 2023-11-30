@@ -5,16 +5,19 @@ import { useRouter } from 'next/router';
 // import { useRouter } from 'next/navigation';
 
 
-export async function getServerSideProps({req,query}) {
+export async function getServerSideProps({ req, query }) {
   const id = query?.id
   const res = await axios.get(`http://192.168.0.128:5000/api/crud/crud-get/${id}`)
   const data = await res.data
   console.log("data", data)
   return { props: { data } }
 }
-export default function Update({data}) {
+export default function Update({ data }) {
   const router = useRouter()
- 
+  const id = router?.query.id
+
+
+
 
 
   const initialValues = {
@@ -35,19 +38,27 @@ export default function Update({data}) {
   });
 
   const postCrudData = (data) => {
-    axios.post("http://192.168.0.128:5000/api/crud/crud-post", {
+
+    const requestBody = {
+      id:id,
       name: data?.name,
       email: data?.email,
       mobile: data?.mobile,
       address: data?.address,
-    })
+    }
+    console.log("requestBody",requestBody)
+    axios.put('http://192.168.0.128:5000/api/crud/crud-put', requestBody)
       .then((response) => {
-        console.log("response", response);
+        console.log("response",response.data);
+      })
+      .catch((error) => {
+        console.error(error);
       });
+    
   }
   return (
     <div>
-      
+
       <form onSubmit={formik.handleSubmit} onChange={formik.handleChange}>
         <div className='mx-auto '>
           <label >Name -</label>
