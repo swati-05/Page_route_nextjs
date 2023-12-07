@@ -10,29 +10,56 @@ function Section2() {
                         <p class="leading-relaxed mt-4 text-2xl font-semibold text-gray-800">I'm Christy Smith, a Web Designer & Photographer</p>
                         <p class="leading-relaxed mt-4  ">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
-                    <div class="lg:w-2/6 md:w-1/2  rounded-lg p-8 flex flex-col md:ml-auto w-full -mt-12 md:mt-0">
+                    <div class="lg:w-1/4 md:w-1/2  rounded-lg p-8 flex flex-col md:ml-auto w-full mt-20">
                         <h2 class="text-gray-800 text-center text-4xl uppercase title-font -mt-12 mb-5 tracking-[0.5rem]">TECH SKILLS</h2>
-                        <div className='flex gap-12 mb-4'>
-                            <div class="flex ">
-                                <img src='https://w7.pngwing.com/pngs/403/269/png-transparent-react-react-native-logos-brands-in-colors-icon-thumbnail.png' className='w-10' />
-                                <h1 className='font-semibold text-gray-700 uppercase text-xl'>React js</h1>
+                        <div class="flex flex-row gap-4 mb-4 mt-4">
+                            <div class="basis-1/2">
+                                <div class="flex space-x-2 ">
+                                    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1150px-React-icon.svg.png' className='w-7' />
+                                    <h1 className='font-semibold text-gray-700 uppercase text-md'>React js</h1>
+                                </div>
                             </div>
-                            <div class="flex">
-                                <img src='https://e7.pngegg.com/pngimages/21/181/png-clipart-linkedin-round-logo-tech-companies.png' className='w-10' />
-                                <h1 className='font-semibold text-gray-700 uppercase text-lg'>tailwind css</h1>
-                            </div>
+                            <div class="basis-1/2"> <div class="flex space-x-2 ">
+                                <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/320px-Tailwind_CSS_Logo.svg.png' className='w-7' />
+                                <h1 className='font-semibold text-gray-700 uppercase text-md'>tailwind css</h1>
+                            </div></div>
                         </div>
-                        <div className='flex gap-12'>
-                            <div class="flex ">
-                                <img src='https://w7.pngwing.com/pngs/403/269/png-transparent-react-react-native-logos-brands-in-colors-icon-thumbnail.png' className='w-10' />
-                                <h1 className='font-semibold text-gray-700 uppercase text-xl'>redux </h1>
+                        <div class="flex flex-row gap-4 mb-4">
+                            <div class="basis-1/2">
+                                <div class="flex space-x-2 ">
+                                    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png' className='w-7' />
+                                    <h1 className='font-semibold text-gray-700 uppercase text-md'>html</h1>
+                                </div>
                             </div>
-                            <div class="flex">
-                                <img src='https://e7.pngegg.com/pngimages/21/181/png-clipart-linkedin-round-logo-tech-companies.png' className='w-10' />
-                                <h1 className='font-semibold text-gray-700 uppercase text-lg'>javascript</h1>
-                            </div>
+                            <div class="basis-1/2"> <div class="flex space-x-2 ">
+                                <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png' className='w-7' />
+                                <h1 className='font-semibold text-gray-700 uppercase text-md'>css</h1>
+                            </div></div>
                         </div>
-
+                        <div class="flex flex-row gap-4 mb-4">
+                            <div class="basis-1/2">
+                                <div class="flex space-x-2 ">
+                                    <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Javascript_badge.svg/1200px-Javascript_badge.svg.png' className='w-7' />
+                                    <h1 className='font-semibold text-gray-700 uppercase text-md'>javascript</h1>
+                                </div>
+                            </div>
+                            <div class="basis-1/2"> <div class="flex space-x-2 ">
+                                <img src='https://repository-images.githubusercontent.com/347723622/92065800-865a-11eb-9626-dff3cb7fef55' className='w-7' />
+                                <h1 className='font-semibold text-gray-700 uppercase text-md'>redux</h1>
+                            </div></div>
+                        </div>
+                        <div class="flex flex-row gap-4 mb-4">
+                            <div class="basis-1/2">
+                                <div class="flex space-x-2 ">
+                                    <img src='https://upload.wikimedia.org/wikipedia/de/thumb/8/8c/Microsoft_SQL_Server_Logo.svg/1200px-Microsoft_SQL_Server_Logo.svg.png' className='w-7' />
+                                    <h1 className='font-semibold text-gray-700 uppercase text-md'>ms sql</h1>
+                                </div>
+                            </div>
+                            <div class="basis-1/2"> <div class="flex space-x-2 ">
+                                <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Asp.net.svg/2560px-Asp.net.svg.png' className='w-7' />
+                                <h1 className='font-semibold text-gray-700 uppercase text-md'>Asp.net</h1>
+                            </div></div>
+                        </div>
                     </div>
                 </div>
             </section>
